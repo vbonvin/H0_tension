@@ -11,5 +11,5 @@ I sure do. Let me know if I missed a new result
 Perhaps.
 
 ### Contributors
-Vivien Bonvin (vivien.bonvin@protonmail.ch)
+Vivien Bonvin (vivien.bonvin@protonmail.ch)  
 Martin Millon (martin.millon@epfl.ch)
