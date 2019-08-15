@@ -2,7 +2,7 @@
 -- A fancy way to represent the tension between Hubble constant measurements --
 
 ### This is amazing, can I use it?
-Sure. You can always reach us (see below) if you'd like an updated/modified version. We're not charging citations (yet), a simple acknowledgment will suffice.
+Sure. You can always reach us (see below) if you'd like an updated/modified version. We're not charging citations (yet), a simple acknowledgment will suffice. The code is licensed under GPL3.0 (see LICENSE)
 
 ### Are you planning to update this plot when new measurements come out?
 We sure do. Let us know if we missed a new result 
