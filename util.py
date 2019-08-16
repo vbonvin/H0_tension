@@ -5,13 +5,16 @@ from sklearn.neighbors import KernelDensity
 
 def confinterval(xs, weights=None, conflevel=0.6826, cumulative=False):
     """
-    Hand-made weighted quantile/percentile computation tool, since there is no numpy equivalent
+    Hand-made weighted quantile/percentile computation tool, since there is no numpy equivalent.
 
     :param xs: list, distribution
     :param weights: list, weights of the distribution
     :param conflevel: float, quantile (between 0 and 1) of the conf interval
-    :param cumulative: bool. If set to True, return the max value of xs corresponding to the conflevel. For example, if bound=max, conflevel=0.68, xs=nnu, return the value such that nnu<=val at 68% confidence.
-    :return: return 3 floats: the median value, minimal value and maximal value matching your confidence level
+    :param cumulative: bool. 
+          * If set to True, return the max value of xs corresponding to the conflevel. For example, if conflevel=0.68, return the value such that xs<=val at 68% confidence.
+          * If set to False, return the values of xs corresponding to conflevel/2.0 around the 50th percentile (median). For example, if conflevel = 0.68, return the 16th, 50 and 84th percentiles of xs.
+          
+    :return: 3 or 1 float(s), see cumulative description.
     
     __warning:: This function is not optimized, so it can be really slow if you apply it to very large data sets.
                 However, for the samples we are dealing with here (around 50k), that's enough (~seconds)
@@ -68,7 +71,15 @@ def confinterval(xs, weights=None, conflevel=0.6826, cumulative=False):
 class Estimate():
     
     def __init__(self, name, mean=None, std=None, vals=None, weights=None):
+        """
+        Class to deal with an H0 estimate. 
+        It can hold either a Gaussian approximation (using mean and std) or a list of weighted values (using vals and weights).
+        
+        :param name: string, name given to your estimate.
+        :param 
 
+        """
+        
         if vals is None:
             assert (mean is not None and std is not None) 
                     
