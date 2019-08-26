@@ -1,6 +1,10 @@
 # H0_tension
 -- A fancy way to represent the tension between Hubble constant measurements --
 
+![H0_tension.png](https://raw.githubusercontent.com/vbonvin/H0_tension/master/H0_tension.png)
+As of 20.08.2019
+
+
 ### This is amazing, can I use it?
 Sure. You can always reach us (see below) if you'd like an updated/modified version. We're not charging citations (yet), a simple acknowledgment will suffice. The code is licensed under GPL3.0 (see LICENSE).
 
