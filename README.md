@@ -2,7 +2,7 @@
 -- A fancy way to represent the tension between Hubble constant measurements --
 
 ![H0_tension.png](https://raw.githubusercontent.com/vbonvin/H0_tension/master/H0_tension.png)
-As of 20.08.2019
+As of 28.01.2020 (update from MCP project)
 
 
 ### This is amazing, can I use it?
